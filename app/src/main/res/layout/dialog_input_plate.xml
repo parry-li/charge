@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_10"
+
+    android:background="@drawable/edittext_border_white_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_26"
+            android:paddingBottom="@dimen/dp_25"
+            android:text="输入二维码"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/dialog_cancel"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_50"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/dp_27"
+            android:paddingRight="@dimen/dp_20"
+            android:src="@mipmap/scan_close" />
+    </RelativeLayout>
+
+    <com.tendency.charge.view.NullMenuEditText
+        android:id="@+id/edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="@dimen/dp_20"
+        android:background="@drawable/dialog_input_bg"
+        android:hint="请输入二维码"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:singleLine="true" />
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/linear_input"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="22dp"-->
+    <!--android:gravity="right"-->
+    <!--android:orientation="horizontal">-->
+
+
+    <!---->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/linear_inputConfirm"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_below="@id/linear_input"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="22dp"-->
+    <!--android:layout_marginBottom="22dp"-->
+    <!--android:gravity="right"-->
+    <!--android:orientation="horizontal">-->
+    <!---->
+
+    <!---->
+
+    <!--</LinearLayout>-->
+    <com.tendency.charge.view.NullMenuEditText
+        android:id="@+id/edit_contentConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:background="@drawable/dialog_input_bg"
+        android:hint="请确认二维码"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/dialog_affirm"
+        style="@style/button_select"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_25"
+        android:layout_marginRight="@dimen/dp_50"
+        android:layout_marginBottom="15dp"
+        android:text="确定" />
+
+
+</LinearLayout>

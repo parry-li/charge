@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="bg_panel">#55555555</color>
+
+    <color name="module_white">#ffffff</color>
+    <!--红色 -->
+    <color name="module_red">#f4504d</color>
+    <color name="transparent">#00000000</color>
+
+    <!--背景颜色-->
+    <color name="module_background">#f1f1f5</color>
+    <!--标题颜色-->
+    <color name="module_main">#447DF6</color>
+    <!--主要字体颜色-->
+    <color name="module_text_3">#333333</color>
+    <color name="module_text_9">#999999</color>
+    <color name="module_black">#000000</color>
+    <color name="module_title_background">#d5236c</color>
+    <color name="module_text_minor">#666666</color>
+    <color name="module_text_6">#666666</color>
+    <color name="module_clolor_e8">#E8E8E8</color>
+
+    <color name="module_button_unselect">#AEB1CA</color>
+    <color name="translucentBlackBg">#55000000</color>
+    <color name="colorDialogBg">#F0F2F5</color>
+    <color name="colorLine">#E7E7E7</color>
+    <color name="module_x">#F86948</color>
+    <!--==========================================================-->
+    <color name="cp_colorAccent">#F3F3F3</color>
+    <color name="cp_colorPrimary">@color/cp_colorAccent</color>
+    <color name="cp_colorPrimaryDark">@color/cp_colorAccent</color>
+
+    <color name="cp_divider">#E5E5E5</color>
+    <color name="cp_shadow">#AAEBEBEB</color>
+    <color name="cp_common_bg">#FAFAFA</color>
+    <color name="cp_content_bg">@color/cp_colorAccent</color>
+    <color name="cp_gray">#8c8c8c</color>
+    <color name="cp_gray_deep">#5c5c5c</color>
+    <color name="cp_alpha_gray">#CC646464</color>
+    <color name="cp_theme_gray">#646464</color>
+
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/module_background"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:background="@color/module_title_background">
+
+        <RelativeLayout
+            android:id="@+id/com_title_back"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/dp_12"
+                android:layout_height="@dimen/dp_15"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:src="@mipmap/yl_common_white_black" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/com_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="标题"
+            android:lines="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_marginRight="@dimen/dp_15"
+            android:textColor="@color/module_white"
+            android:textSize="@dimen/dp_16" />
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--播放全屏视频时用-->
+        <FrameLayout
+            android:id="@+id/video_fullView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"-->
+            <!--android:id="@+id/title_tool_bar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="@color/colorTheme"-->
+            <!--app:contentInsetStart="0.0dp"-->
+            <!--app:layout_collapseMode="pin"-->
+            <!--app:layout_scrollFlags="enterAlways|scroll"-->
+            <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+            <!--app:theme="@style/ToolbarStyle" />-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <WebView
+                    android:id="@+id/webview_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbarSize="3dp" />
+
+                <ProgressBar
+                    android:id="@+id/pb_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignParentTop="true"
+                    android:max="1000"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/process_bg"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
